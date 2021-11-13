@@ -1,0 +1,19 @@
+﻿@* in order to reach this page, you have to use /Restaurants/Detail/id(integer)  *@
+@* with ? in {id?:int} mean you can reach this page by going  /Restaurants/Detail/id(integer) or without an id *@
+@page "{restaurantId:int}"
+@model OdeToFood.Pages.Shared.Restaurants.DetailModel
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h2>@Model.Restaurant.Name</h2>
+<div>
+    Id: @Model.Restaurant.Id
+</div>
+<div>
+    Location : @Model.Restaurant.Location
+</div>
+<div>
+    Cuisine: @Model.Restaurant.Cuisine
+</div>
+<a asp-page="./List" class="btn btn-default">All Restaurants</a>
