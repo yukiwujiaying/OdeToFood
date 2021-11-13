@@ -48,15 +48,29 @@ namespace OdeToFood.Pages.Shared.Restaurants
 
         public IActionResult OnPost()
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
+            {
+                Cuisines = htmlHelper.GetEnumSelectList<CuisineType>();
+                return Page();
+                
+            }
+            if(Restaurant.Id > 0)
             {
                 restaurantData.Update(Restaurant);
-                restaurantData.Commit();
-                //second parameter is object contain route value
-                return RedirectToPage("./Detail", new { restaurantId = Restaurant.Id});
             }
-            Cuisines = htmlHelper.GetEnumSelectList<CuisineType>();
-            return Page();
+            // any restaurand with id<=0 mwan is a new restaurant need to add it to the datasource
+            else
+            {
+                restaurantData.Add(Restaurant);
+            }
+            restaurantData.Commit();
+
+            TempData["Message"] = "Restaurant Saved!";
+
+            ////second parameter is object contain route value
+            return RedirectToPage("./Detail", new { restaurantId = Restaurant.Id });
+
+
 
         }
     }
