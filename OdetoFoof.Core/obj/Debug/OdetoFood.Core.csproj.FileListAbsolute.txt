@@ -1,0 +1,6 @@
+C:\Users\ywu11\Downloads\OdeToFood\OdetoFoof.Core\bin\Debug\OdetoFoof.Core.dll
+C:\Users\ywu11\Downloads\OdeToFood\OdetoFoof.Core\bin\Debug\OdetoFoof.Core.pdb
+C:\Users\ywu11\Downloads\OdeToFood\OdetoFoof.Core\obj\Debug\OdetoFood.Core.csprojAssemblyReference.cache
+C:\Users\ywu11\Downloads\OdeToFood\OdetoFoof.Core\obj\Debug\OdetoFood.Core.csproj.CoreCompileInputs.cache
+C:\Users\ywu11\Downloads\OdeToFood\OdetoFoof.Core\obj\Debug\OdetoFoof.Core.dll
+C:\Users\ywu11\Downloads\OdeToFood\OdetoFoof.Core\obj\Debug\OdetoFoof.Core.pdb
