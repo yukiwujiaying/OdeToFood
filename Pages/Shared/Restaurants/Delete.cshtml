@@ -1,0 +1,26 @@
+﻿@page "{restaurantId}"
+@model OdeToFood.Pages.Shared.Restaurants.DeleteModel
+@{
+   
+}
+
+
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h2>Delete!</h2>
+    <div class="alert alert-danger" >
+        Are you sure you want to delete @Model.Restaurant.Name ?
+    </div>
+    <form method="post">
+        <button type="submit" class="btn btn-danger">Yes!</button>
+        <a asp-page="List" class="btn btn-default">Cancel</a>
+    </form>
+</body>
+
